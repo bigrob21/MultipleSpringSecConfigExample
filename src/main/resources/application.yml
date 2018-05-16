@@ -1,0 +1,13 @@
+server:
+  port: 8443
+  ssl:
+    enabled: true
+    key-store: classpath:pki/server.jks
+    key-store-password: ${KEYPASSWD}
+    trust-store: classpath:pki/trust.jks 
+    trust-store-password: ${KEYPASSWD} 
+    client-auth: need
+   
+security:
+  basic:
+    enabled: false
