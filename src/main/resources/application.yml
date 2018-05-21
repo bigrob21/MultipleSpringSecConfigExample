@@ -11,3 +11,10 @@ server:
 security:
   basic:
     enabled: false
+    
+spring:
+  application:
+    name: SpringSecurityApp-1
+  profiles:
+    active:
+    - dev
